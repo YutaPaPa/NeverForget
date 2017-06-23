@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TextView android:text ="@string/title_property" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/car_number"
+        android:id="@+id/textView" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="text"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_weight="0.54" />
+</LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_number"
+        android:id="@+id/textView2"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_weight="0.51" />
+</LinearLayout>
+
+</LinearLayout>
